@@ -1,0 +1,200 @@
+#titulo { /* # - busque un id con valor "titulo"*/
+    color: tomato; /* color de fuente */
+}
+
+.texto { /* . - busque una clase llamada "texto"*/
+    color: slateblue;
+}
+
+p.especial {
+    color:mediumseagreen;
+}
+
+p.texto { /* p.texto - a todas las etiquetas de p que contengan una clase de "texto"*/
+    color:violet;
+}
+
+div p { /* en todas nuestras etiquetas div, todas sus etiquetas p contenida en ella aplicar lo siguiente*/
+    color:aquamarine;
+}
+
+div h2 { /* en todas nuestras etiquetas div, todas sus etiquetas h2 contenida en ella aplicar lo siguiente*/
+    color:brown;
+}
+
+div h2, div h3 { /* aplicar lo siguiente a todos los h2 t h3 que se encuentran en div*/
+    color:burlywood;
+}
+
+* { /* aplicar lo siguiente a todo*/
+    font-size: 24px; /* tamaño de fuente*/
+    /* color:darkred;  cambia el color de fuente de todos los elementos que no hayan sido cambiados en este codigo, pero esto pasa solo en el selector universal */
+}
+
+.color {
+    color: #0ff; /* definicion de color por hexadecimal, cada digito es un color (rojo, verde, azul) */
+    color: #f00f0f; /* definicion de color por hexadecimal con más presicion*/
+    color: rgb(255, 0, 255); /* definicion de color por rgb */
+}
+
+.color {
+    /* border: 5px black solid; /*(grosor, color, estilo del borde) */
+
+    /* Otros tipos de bordes: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */
+
+    border-style: solid; /* para solo seleccionar el borde */
+    border-color: blue; /* para solo seleccionar el color */
+    border-radius: 5px; /* para solo seleccionar el radio de las esquinas */
+    border-width: 1cm; /* para solo seleccionar el grosor */
+
+    /*
+    Distitas tipos de de medidas
+    cm, mm, in (pulgadas), pt (puntos (1/72 in)), pc (12 puntos), em (tamaño de la fuente que se esta usando actualmente el objeto), rem (tamaño de la fuente que tiene el elemento raiz)
+    */
+}
+
+#fondo {
+    background-color: red;
+    background-color: rgba(0,0,0,0.5); /* opacidad del color, por lo que esto permitiria ver elementos que estan atras*/
+    /*opacity: 0.3;  opacidad de todo el objeto */
+    background-image: url('coffee.png');
+    height: 300px; /*tamaño objeto */
+
+    background-size: auto; /* tamaño normal del objeto */
+    background-size: cover; 
+    background-size: contain; 
+
+    background-repeat: repeat-y; /* repetir imagen en el eje y */
+    
+    background: #f00 url('coffee.png') repeat-y center bottom; /* escribimos varias de las caracteristicas de arriba en una sola linea */
+    background-size: 100px 100px;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /* especificamos el tamaño de la margen de arriba, derecha, abajo y izquierda, esto se refiere al margen fuera del objeto */
+    margin: 15px; /* tambien podemos solo colocar un valor para que todas sus margenes sean del mismo tamaño */
+    padding: 30px 25px 20px 15px; /* especificamos el tamaño de la margen de arriba, derecha, abajo y izquierda, esto se refiere al margen por dentro del elemento */
+    padding: 15px; /* tambien podemos solo colocar un valor para que todas sus margenes sean del mismo tamaño */
+    border: solid 1px black; /* especificamos carateristicas del borde, el cual se ibica entre el magin y el padding */
+    height: 100px;
+    width: 60px;
+    overflow: visible; /* mostrar todo el contenido del objeto que este por fuera del espacio */
+    overflow: hidden; /* ocultar todo el contenido del objeto que este por fuera del espacio */
+    overflow: scroll; /* oculta todo el contenido del objeto pero coloca un scroll para que se pueda navegar por el mismo*/
+
+    outline: 1px solid red; /* margen que está por fuera del elemento, pero antes del margin */
+}
+
+.text {
+    font-family: 'Oswalt', sans-serif; /* usamos la fuente Oswalt que la importamos de Google Fonts y en el caso en el que no la encuentre use sans-serif */
+    text-align: center; /* dar centrado al texto (left es el valor por defecto) (otros tipos de valores son right, justify)*/
+    text-decoration: underline; /* decoraciones al texto (underline, line-through, overline) */
+    text-shadow: 3px 5px 5px blue; /* con esto hacemos que parezca una sombra del texto(cuanto queremos que se mueva la sombra a la derecha, cuanto queremos que se mueva la sombra hacia abajo, cantidad de difuminado color de la sombre) */
+}
+
+a:link{ /* cuando el link no ha sido visitado */
+    color: blueviolet;
+}
+
+a:visited{ /* cuando el link ya ha sido visitado */
+    color: gray;
+}
+
+a:hover{ /* cuando el mouse pasa por encima del link */
+    color: yellow;
+}
+
+a:active{ /* cuando el link esta ciendo clickeado */
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    /* list-style-type: none;  cambiar tipo de puntos (circle, georgian, etc) */
+    /*padding-left: 0;  resetear el pagging */
+    list-style-position: inside; /* dar un salto de linea a todos los elementos de la lista */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* pegar celdas de la tabla */
+
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th { /* para cambiar el color de la primer fila */
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+tr:hover{ /* cuando el mouse pasa por encima de la tabla */
+    background-color: yellow;
+    cursor: pointer; /* cambiar el puntero */
+}
+
+span {
+    /*display: none;  no aparecen en pantalla */
+    /*visibility: hidden;  quitarle la visibilidad al objeto */
+    display: block;
+    max-width: 500px; /* establece el maximo ancho del objeto, pero si la ventana es menos ancha, este objeto se encoge sin problema, a comparacion de solo width que siempre sera del mismo tamaño */
+    background-color: red;
+}
+
+#position{
+    position: relative; /* se mueve el objeto segun las siguientes caracteristicas de left, top, etc */
+    position: fixed; /* hace que el objeto se mueva con la ventana */
+    position: sticky; /* queda pegado a la ventana cuendo se mueve pero con las posiciones siguientes */
+    left: 20px;
+    top: 25px; 
+}
+
+.left {
+    float: left; /* posiciona el objeto a un lado de donde es contenido */
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right; /* posiciona el objeto a un lado de donde es contenido */
+}
+
+.container{
+    height: 200px;
+}
+
+.card {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+
+.column {
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block; /* esta opcion nos deja modificar el tamaño */
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+    width: 200px; /* para centrar un objeto siempre debe tener un ancho */
+    margin: 0 auto;
+    background-color: aquamarine;
+}
