@@ -1,0 +1,76 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+
+header{
+    background-color:  #dd9000;
+    color: white;
+    padding: 1rem 0rem;
+
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+section article{
+    transition: box-shadow 0.3s ease; /* indicamos qué propiedades de css queremos que sean animadas, se le indica el origen y mediante algun evento el final. En este caso el inicio seria un box-shadow sin sombra y el final seria la sombra que le asignamos al pasar el mouse.  (que propiedades queremos animar, tiempo que queremos que tome la transicion, algoritmo con el que queremos acelerar y desacelerar la animacion) */
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover{
+    box-shadow: 0.5rem 0.5rem 0.9rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #dd9000;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
