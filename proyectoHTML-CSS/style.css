@@ -1,0 +1,114 @@
+/* Configuracion para toda la pagina */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Configuracion para todo el body */
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+
+/* Configuracion para la barra superior */
+header{
+    background-color:  #ffffff;
+    border-style: solid; 
+    border-width: 0.1rem;
+    border-color: #bebebe;
+    color: white;
+    padding: 1rem 0rem;
+}
+
+/* Configuracion de la barra de historias */
+.barraStories{
+    background-color: #fff;
+    margin: 2rem;
+    border-style: solid; 
+    border-width: 0.1rem;
+    border-color: #bebebe;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0;
+    overflow: hidden; /* POR QUE CUANDO QUITAMOS ESTO O LA PONEMOS EN VISIBLE SE DESCUADRA TODO */
+}
+
+/* configuracion de historia de perfial en la barra de historias */
+section .profileStories{
+    margin: 1rem;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    float: left;
+}
+
+/* Configuracion de username de perfil de la barra de historias */
+section .profileStories img {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+/* Configuracion del contenedor de los post */
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Configuracion del post */
+section .post{
+    transition: box-shadow 1.5s ease; 
+    background-color: #fff;
+    margin: 2rem 0;
+    border-style: solid; 
+    border-width: 0.1rem;
+    border-color: #bebebe;
+    border-radius: 0.2rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+/* Configuracion de sombra de post */
+section .post:hover{
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+}
+
+/* Configuracion de margenes de letreros en post */
+section .post h2, section .post p {
+    margin: 1rem;
+}
+
+/* configuracion de barra inferior*/
+footer {
+    background-color: #dd9000;
+    padding: 3rem;
+    color: #fff;
+}
+
+/* Configuracion de seccion de barra inferior */
+footer section {
+    float: right;
+}
+
+/* Configuracion de barra inferior (otros) */
+footer p {
+    margin: 0;
+}
+
+/* Configuracion de animacion de letreros */
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+/* Configuracion de animacion de letremos de barra inferior */
+footer a:hover {
+    color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
