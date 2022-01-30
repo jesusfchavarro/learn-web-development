@@ -11,7 +11,6 @@ header{
     background-color:  #dd9000;
     color: white;
     padding: 1rem 0rem;
-
 }
 
 header h1 {
@@ -25,7 +24,7 @@ header h1 {
 }
 
 section article{
-    transition: box-shadow 0.3s ease; /* indicamos qué propiedades de css queremos que sean animadas, se le indica el origen y mediante algun evento el final. En este caso el inicio seria un box-shadow sin sombra y el final seria la sombra que le asignamos al pasar el mouse.  (que propiedades queremos animar, tiempo que queremos que tome la transicion, algoritmo con el que queremos acelerar y desacelerar la animacion) */
+    transition: box-shadow 1.5s ease; /* indicamos qué propiedades de css queremos que sean animadas, se le indica el origen y mediante algun evento el final. En este caso el inicio seria un box-shadow sin sombra y el final seria la sombra que le asignamos al pasar el mouse.  (que propiedades queremos animar, tiempo que queremos que tome la transicion, algoritmo con el que queremos acelerar y desacelerar la animacion) */
     background-color: #fff;
     margin: 2rem 0;
     border-radius: 0.5rem;
@@ -34,7 +33,7 @@ section article{
 }
 
 section article:hover{
-    box-shadow: 0.5rem 0.5rem 0.9rem rgba(0,0,0,0.3);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
 }
 
 section article h2, section article p {
