@@ -7,11 +7,17 @@ html {
 body{
     margin: 0;
     background-color: #efefef;
+    padding: 52px 20px 0; /* Para que tenga en cuenta el tamaño de la barrita fija, o si no va a empezar a aparecer el cuerpo detras de la barra de navegación */
 }
-
+/* */
 /* Configuracion para la barra superior */
 header{
     background-color:  #ffffff;
+    height:  25px;
+    position: fixed; /*Fijar la barrita */
+    width: 100%; /* Que ocupe el ancho de toda la pantalla */
+    top: 0; /* Que se quede arriba como punto de referencia*/
+    left: 0; /* Y que se quede a la izquierda como punto de referencia*/
     border-style: solid; 
     border-width: 0.1rem;
     border-color: #bebebe;
