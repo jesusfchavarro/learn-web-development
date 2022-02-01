@@ -1,6 +1,6 @@
 /* Configuracion para toda la pagina */
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; font-size: 11.5px;
 }
 
 /* Configuracion para todo el body */
@@ -9,7 +9,7 @@ body{
     background-color: #efefef;
     padding: 52px 20px 0; /* Para que tenga en cuenta el tamaño de la barrita fija, o si no va a empezar a aparecer el cuerpo detras de la barra de navegación */
 }
-/* */
+
 /* Configuracion para la barra superior */
 header{
     background-color:  #ffffff;
@@ -28,27 +28,45 @@ header{
 /* Configuracion de la barra de historias */
 .barraStories{
     background-color: #fff;
-    margin: 2rem;
+    margin: 2rem auto;
     border-style: solid; 
     border-width: 0.1rem;
     border-color: #bebebe;
     border-radius: 0.2rem;
     padding: 0.25rem 0;
-    overflow: hidden; /* POR QUE CUANDO QUITAMOS ESTO O LA PONEMOS EN VISIBLE SE DESCUADRA TODO */
+    overflow-x: scroll; 
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: flex-start;
 }
 
-/* configuracion de historia de perfial en la barra de historias */
+/* configuracion de historia de perfil en la barra de historias */
 section .profileStories{
     margin: 1rem;
-    border-radius: 0.2rem;
     padding: 0.25rem 0;
+    border-radius: 0.2rem;
     cursor: pointer;
-    float: left;
+    
+}
+
+/* configuracion usernames de users de la barra de historias */
+.barraStories article p{
+    text-align: center; /* centrar texto username */
+    margin: 0 ;
 }
 
 /* Configuracion de username de perfil de la barra de historias */
 section .profileStories img {
-    margin: 0rem 1rem 0rem 1rem;
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px;
+    border-style: solid;
+    border-color: linear-gradient(to right, red, orange); /* REVISAR */
+    padding: 3.5px;
 }
 
 /* Configuracion del contenedor de los post */
@@ -61,13 +79,36 @@ section .profileStories img {
 section .post{
     transition: box-shadow 1.5s ease; 
     background-color: #fff;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     border-style: solid; 
     border-width: 0.1rem;
     border-color: #bebebe;
     border-radius: 0.2rem;
     padding: 0.25rem 0;
+    /*cursor: pointer;*/
+}
+
+/*configuracion de letreros de username, likes, comentarios y hastags*/
+section .post .username, section .post .likes, section .post .hastag, section .post .comments{
     cursor: pointer;
+}
+
+/* configuracion del username anterior a la descripcion del post (necesitamos que no quede en una linea solo)
+section .post .username{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    
+}*/
+
+/* configuracion para opacidad de texto de comentarios y hora de publicacion */
+section .post .postHour, section .post .comments {
+    color:#9c9c9c;
+}
+
+/* configuracion texto de hastags */
+section .post .hastag {
+    color:#0a298d;
 }
 
 /* Configuracion de sombra de post */
