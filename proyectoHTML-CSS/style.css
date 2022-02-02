@@ -23,6 +23,34 @@ header{
     border-color: #bebebe;
     color: white;
     padding: 1rem 0rem;
+    display: flex;
+}
+
+/* configuracion logo instagrama barra superior */
+.logoInstagram {
+    cursor: pointer;
+    margin: 0;
+
+}
+
+/* configuracion seccion logos barra superior */
+.seccionIconosBarraSuperior{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* configuracion logos barra superior */
+header .iconoBarraSuperior{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* configuracion profile de la barra superior */
+header .profile {
+    width: 24px;
+    height: 24px;
 }
 
 /* Configuracion de la barra de historias */
@@ -35,9 +63,9 @@ header{
     border-radius: 0.2rem;
     padding: 0.25rem 0;
     overflow-x: scroll; 
+    width: 600px;
     display: flex;
     flex-direction: row;
-    width: 600px;
     justify-content: flex-start;
 }
 
@@ -52,7 +80,7 @@ section .profileStories{
 
 /* configuracion usernames de users de la barra de historias */
 .barraStories article p{
-    text-align: center; /* centrar texto username */
+    text-align: center; 
     margin: 0 ;
 }
 
@@ -85,7 +113,27 @@ section .post{
     border-color: #bebebe;
     border-radius: 0.2rem;
     padding: 0.25rem 0;
-    /*cursor: pointer;*/
+}
+
+/* configuracion de la barra superirior del post */
+.barraSuperiorPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* configuracion foto profile del post */
+section .post .profilePost img{
+    margin: 7px 0px 7px 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px;
+    border-style: solid;
+    border-color: linear-gradient(to right, red, orange); /* REVISAR */
+    padding: 3.5px;
+    cursor: pointer;
+    
 }
 
 /*configuracion de letreros de username, likes, comentarios y hastags*/
