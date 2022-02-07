@@ -11,9 +11,9 @@ body{
 }
 
 /* Configuracion para la barra superior */
-header{
+.barraSuperior{
     background-color:  #ffffff;
-    height:  25px;
+    height:  30px;
     position: fixed; /*Fijar la barrita */
     width: 100%; /* Que ocupe el ancho de toda la pantalla */
     top: 0; /* Que se quede arriba como punto de referencia*/
@@ -24,25 +24,49 @@ header{
     color: white;
     padding: 1rem 0rem;
     display: flex;
+    justify-content: space-around;
+
 }
 
 /* configuracion logo instagrama barra superior */
 .logoInstagram {
     cursor: pointer;
     margin: 0;
+}
 
+/* configuracion buscador barra superior */
+.buscador{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+input.src{
+    padding: 8px 10px 8px 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border:none;
+    background: rgb(238, 236, 236) url("lupa.png")
+         no-repeat 9px center;
+    width: 228px 25px;
+}
+
+input.src:hover{
+    background-color: rgb(238, 236, 236);
+    box-shadow: 0 0 5px #394057
 }
 
 /* configuracion seccion logos barra superior */
 .seccionIconosBarraSuperior{
-    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    display: flex;
 }
 
 /* configuracion logos barra superior */
 header .iconoBarraSuperior{
-    width: 24px;
+    width: 45px;
     height: 24px;
     cursor: pointer;
 }
@@ -51,6 +75,7 @@ header .iconoBarraSuperior{
 header .profile {
     width: 24px;
     height: 24px;
+    border-radius: 18px;
 }
 
 /* Configuracion de la barra de historias */
@@ -115,7 +140,7 @@ section .post{
     padding: 0.25rem 0;
 }
 
-/* configuracion de la barra superirior del post */
+/* configuracion de la barra superior del post */
 .barraSuperiorPost {
     display: flex;
     flex-direction: row;
@@ -132,13 +157,24 @@ section .post .profilePost img{
     border-style: solid;
     border-color: linear-gradient(to right, red, orange); /* REVISAR */
     padding: 3.5px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
+/* configuracion puntos post */
+section .post .trespuntos img{
+    margin: 7px 0px 7px 7px;
+    width: 20px;
+    height: 20px;
+    border-style: none;
+    padding: 3.5px;
+    cursor: pointer;  
+}
+
+
 
 /*configuracion de letreros de username, likes, comentarios y hastags*/
 section .post .username, section .post .likes, section .post .hastag, section .post .comments{
     cursor: pointer;
+
 }
 
 /* configuracion del username anterior a la descripcion del post (necesitamos que no quede en una linea solo)
@@ -171,14 +207,15 @@ section .post h2, section .post p {
 
 /* configuracion de barra inferior*/
 footer {
-    background-color: #dd9000;
+    background-color: white;
     padding: 3rem;
-    color: #fff;
+    color: black;
 }
 
 /* Configuracion de seccion de barra inferior */
 footer section {
     float: right;
+    
 }
 
 /* Configuracion de barra inferior (otros) */
@@ -189,7 +226,7 @@ footer p {
 /* Configuracion de animacion de letreros */
 footer a {
     transition: color 0.3s ease;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -198,12 +235,12 @@ footer a:hover {
     color: cornflowerblue;
 }
 
-
-
-
-
-
-
-
-
-
+/* Preguntas:
+1) ¿cómo hacer el degradado rosadito de la bolita
+2) ¿por qué la parte de la barra superior esta actuando 
+como si fuera un ícono separado y no se distribuye con los otros?
+3) ¿cómo hacer para que al dar clic en el botón buscar 
+no aparezca el borde negro?
+4) ¿cómo hacer para que la barra de historias quede como la de insta?
+5) ¿cómo poner los punticos a la derecha?
+*/
