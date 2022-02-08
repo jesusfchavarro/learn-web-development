@@ -47,8 +47,8 @@ input.src{
     font-size: 16px;
     border-radius: 8px;
     border:none;
-    background: rgb(238, 236, 236) url("lupa.png")
-         no-repeat 9px center;
+    background-color: rgb(238, 236, 236);
+    background: rgb(238, 236, 236) url("lupa.png");
     width: 228px 25px;
 }
 
@@ -56,6 +56,11 @@ input.src:hover{
     background-color: rgb(238, 236, 236);
     box-shadow: 0 0 5px #394057
 }
+
+input.src:focus{   
+    outline:none;
+  }
+  
 
 /* configuracion seccion logos barra superior */
 .seccionIconosBarraSuperior{
@@ -118,7 +123,7 @@ section .profileStories img {
     border-radius: 50%;
     border: 2px;
     border-style: solid;
-    border-color: linear-gradient(to right, red, orange); /* REVISAR */
+    border-image: linear-gradient(to right, red, orange); /* REVISAR */
     padding: 3.5px;
 }
 
@@ -161,14 +166,18 @@ section .post .profilePost img{
 }
 /* configuracion puntos post */
 section .post .trespuntos img{
-    margin: 7px 0px 7px 7px;
+    margin: 7px 7px 7px 7px;
     width: 20px;
     height: 20px;
     border-style: none;
     padding: 3.5px;
-    cursor: pointer;  
+    cursor: pointer; 
 }
 
+.trampa {
+    flex-grow: 2; /* que tanto crece con relación a los otros
+    el dos es que ocupa el doble en comparación */
+}
 
 
 /*configuracion de letreros de username, likes, comentarios y hastags*/
