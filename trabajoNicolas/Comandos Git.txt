@@ -1,0 +1,39 @@
+git init: iniciar un repositorio
+git remote add origin *https*
+git commit -m "*Descripcion de los cambios*"
+git add *nombre del archivo a observar* : comunicarle a git que observe archivos
+git status: visualizar el estado de mi repositorio
+git merge *nombre de la rama a la que se quiere unir*: une la rama en la que se está trabjando a la rama que se coloca en la instruccion
+git branch: crear una rama
+git clone: clonar un repositorio que no es de mi propiedad
+git checkout *nombre de la rama*: para posicionarse en una rama especifica
+git rebase *nombre de la rama a la que se quiere ir*: rama en la que se está trabajando pasara a ser una version mas adelantada de la rama a la que se coloca en la instruccion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

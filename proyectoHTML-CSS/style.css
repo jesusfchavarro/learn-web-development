@@ -5,9 +5,10 @@ html {
 
 /* Configuracion para todo el body */
 body{
-    margin: 0;
+    margin: 0px;
+    border: 0px;
     background-color: #efefef;
-    padding: 52px 20px 0; /* Para que tenga en cuenta el tamaño de la barrita fija, o si no va a empezar a aparecer el cuerpo detras de la barra de navegación */
+    padding: 52px 0px 0px 0px; /* Para que tenga en cuenta el tamaño de la barrita fija, o si no va a empezar a aparecer el cuerpo detras de la barra de navegación */
 }
 
 /* Configuracion para la barra superior */
@@ -40,7 +41,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    }
+}
 
 input.src{
     padding: 8px 10px 8px 40px;
@@ -59,7 +60,7 @@ input.src:hover{
 
 input.src:focus{   
     outline:none;
-  }
+}
   
 
 /* configuracion seccion logos barra superior */
@@ -74,6 +75,7 @@ header .iconoBarraSuperior{
     width: 45px;
     height: 24px;
     cursor: pointer;
+    margin: 0px;
 }
 
 /* configuracion profile de la barra superior */
@@ -123,19 +125,21 @@ section .profileStories img {
     border-radius: 50%;
     border: 2px;
     border-style: solid;
-    border-image: linear-gradient(to right, red, orange); /* REVISAR */
+    background-clip: padding-box; 
+    border-color: rgb(212, 8, 212); /* REVISAR */
+    /*border-image: linear-gradient(to right, red, orange);  REVISAR */
     padding: 3.5px;
 }
 
 /* Configuracion del contenedor de los post */
 .container{
-    width: 600px;
+    width: 602px;
     margin: 0 auto;
 }
 
 /* Configuracion del post */
 section .post{
-    transition: box-shadow 1.5s ease; 
+    transition: box-shadow 0.7s ease; 
     background-color: #fff;
     margin: 1.5rem 0;
     border-style: solid; 
@@ -164,6 +168,7 @@ section .post .profilePost img{
     padding: 3.5px;
     cursor: pointer;  
 }
+
 /* configuracion puntos post */
 section .post .trespuntos img{
     margin: 7px 7px 7px 7px;
@@ -179,20 +184,31 @@ section .post .trespuntos img{
     el dos es que ocupa el doble en comparación */
 }
 
+/* configuracion iconos post */
+.iconosPost{
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* configuracion iconos post especificos */
+.iconosPost div{
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* configuracion iconos post especificos */
+.iconosPost div svg{
+    margin: 7px 7px 7px 7px;
+    cursor: pointer; 
+}
 
 /*configuracion de letreros de username, likes, comentarios y hastags*/
 section .post .username, section .post .likes, section .post .hastag, section .post .comments{
     cursor: pointer;
 
 }
-
-/* configuracion del username anterior a la descripcion del post (necesitamos que no quede en una linea solo)
-section .post .username{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    
-}*/
 
 /* configuracion para opacidad de texto de comentarios y hora de publicacion */
 section .post .postHour, section .post .comments {
