@@ -128,7 +128,7 @@ section .profileStories img {
     background-clip: padding-box; 
     border-color: rgb(212, 8, 212); /* REVISAR */
     /*border-image: linear-gradient(to right, red, orange);  REVISAR */
-    padding: 3.5px;
+    padding: 2px;
 }
 
 /* Configuracion del contenedor de los post */
@@ -164,9 +164,13 @@ section .post .profilePost img{
     border-radius: 50%;
     border: 2px;
     border-style: solid;
-    border-color: linear-gradient(to right, red, orange); /* REVISAR */
-    padding: 3.5px;
+    background-clip: padding-box; 
+    border-color: rgb(212, 8, 212); /* REVISAR */
+    /*border-image: linear-gradient(to right, red, orange);  REVISAR */
+    padding: 2px;
     cursor: pointer;  
+
+    
 }
 
 /* configuracion puntos post */
